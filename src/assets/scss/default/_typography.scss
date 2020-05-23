@@ -106,7 +106,9 @@
 ------------------------------------*/
 
 body {
+    direction: rtl;
     font-size: 14px;
+    text-align: right;
     font-family: $font-family-1;
 }
 p {

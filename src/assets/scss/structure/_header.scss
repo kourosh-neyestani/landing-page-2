@@ -1,0 +1,76 @@
+/*------------------------------------
+    Header
+------------------------------------*/
+
+.app-header {
+    font-size: 16px;
+    font-weight: 400;
+
+    .header-nav {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-logo {
+            a {
+                display: block;
+            }
+        }
+        .header-menu {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    margin-left: 45px;
+                }
+            }
+        }
+        .button-menu {
+            width: 50px;
+            height: 50px;
+            padding-top: 12px;
+            display: none;
+
+            span {
+                width: 36px;
+
+                &,
+                &:before,
+                &:after {
+                    height: 2px;
+                    float: right;
+                    display: block;
+                    position: relative;
+                    background-color: $base-1;
+                }
+                &:before {
+                    top: -12px;
+                    width: 30px;
+                    content: "";
+                }
+                &:after {
+                    bottom: -10px;
+                    width: 30px;
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .app-header {
+        .header-nav {
+            .header-menu {
+                display: none;
+            }
+            .button-menu {
+                display: inline-block;
+            }
+        }
+    }
+}
