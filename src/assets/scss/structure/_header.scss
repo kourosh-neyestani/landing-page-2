@@ -5,6 +5,8 @@
 .app-header {
     font-size: 16px;
     font-weight: 400;
+    position: relative;
+    z-index: 999;
 
     .header-nav {
         top: 0;

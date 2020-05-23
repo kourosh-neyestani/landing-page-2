@@ -7,11 +7,13 @@ import Header from "../../components/Header";
 // Scenes
 import Service from "../../sections/service/Service";
 
+import backgroundImage from "./1-1.jpg";
+
 function Home() {
     return (
         <>
             <Header />
-            <section className="section section-hero section-hero-1">
+            <section className="section section-hero section-hero-1 overlay-image" style={{backgroundImage: `url(${backgroundImage})`}}>
                 <div className="display-center">
                     <Container>
                         <Row>
