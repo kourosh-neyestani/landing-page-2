@@ -4,6 +4,9 @@ import { Container, Row, Col } from "react-grid-system";
 // Components
 import Header from "../../components/Header";
 
+// Scenes
+import Service from "../../sections/service/Service";
+
 function Home() {
     return (
         <>
@@ -29,6 +32,7 @@ function Home() {
                     </Container>
                 </div>
             </section>
+            <Service />
         </>
     );
 }

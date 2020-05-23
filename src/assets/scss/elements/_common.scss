@@ -1,4 +1,36 @@
 /*------------------------------------
+    Element: Icon
+------------------------------------*/
+
+.el-icon {
+    position: relative;
+}
+
+/*------------------------------------
+    Element: Card
+------------------------------------*/
+
+.el-card {
+    position: relative;
+    padding: 60px 45px;
+    background-color: $base-0;
+    box-shadow: 9px 14px 42px 3px rgba(163, 174, 184, 0);
+    box-shadow: 9px 14px 42px 3px #eee;
+
+    p {
+        height: 111px;
+        text-align: right;
+        font-weight: 300;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+}
+/*------------------------------------
     Element: Heading
 ------------------------------------*/
 

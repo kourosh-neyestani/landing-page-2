@@ -1,3 +1,35 @@
 /*------------------------------------
     Section: Service
 ------------------------------------*/
+
+.section-service {
+    .el-card {
+        .el-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 27px;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            background-color: $gray;
+
+            // Only: Service > Card > Icon
+            top: -9px;
+            position: relative;
+
+            .icon {
+                top: 6px;
+                color: $primary;
+                position: relative;
+            }
+        }
+    }
+    .column:nth-child(2),
+    .column:nth-child(5),
+    .column:nth-child(7) {
+        .el-card {
+            z-index: 1;
+        }
+    }
+}
