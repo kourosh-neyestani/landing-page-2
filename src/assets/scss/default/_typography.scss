@@ -106,6 +106,7 @@
 ------------------------------------*/
 
 body {
+    letter-spacing: -.5px;
     direction: rtl;
     font-size: 14px;
     text-align: right;
@@ -113,6 +114,8 @@ body {
 }
 p {
     color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.8;
 }
 a {
