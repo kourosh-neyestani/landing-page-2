@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
+import Slider from "react-slick";
 
 // Components
 import Header from "../../components/Header";
@@ -10,10 +11,20 @@ import Service from "../../sections/service/Service";
 import backgroundImage from "./1-1.jpg";
 
 function Home() {
+    const sliderSettings = {
+        dots: false,
+        speed: 500,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+    };
+
     return (
         <>
             <Header />
-            <section className="section section-hero section-hero-1 overlay-image" style={{backgroundImage: `url(${backgroundImage})`}}>
+            <section className="section section-hero section-hero-1 overlay-image" style={{ backgroundImage: `url(${backgroundImage})` }}>
                 <div className="display-center">
                     <Container>
                         <Row>
@@ -29,6 +40,18 @@ function Home() {
                                 <button className="button button-lg button-line-primary">
                                     <span className="text">مشاهده نمونه کارها</span>
                                 </button>
+                            </Col>
+                            <Col>
+                                <div className="display-center">
+                                    <div class="el-mobile el-mobile-1">
+                                        <div className="el-mobile-frame"></div>
+                                        <ul className="el-mobile-popovers">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

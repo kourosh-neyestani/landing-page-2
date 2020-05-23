@@ -30,6 +30,54 @@
         margin-bottom: 30px;
     }
 }
+
+/*------------------------------------
+    Element: Mobile Frame
+------------------------------------*/
+
+.el-mobile {
+    width: 270px;
+    height: 500px;
+    position: relative;
+    background-color: $primary;
+    margin: auto;
+
+    .el-mobile-frame {
+        height: 100%;
+        z-index: 3;
+        position: relative;
+    }
+    .el-mobile-popovers {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        list-style: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+
+        li {
+            width: 75%;
+            height: 14%;
+            z-index: 6;
+            display: block;
+            margin-top: 27%;
+            position: relative;
+            background-color: $base-0;
+            box-shadow: 0 14px 42px 3px $gray;
+
+            &:nth-child(odd) {
+                left: 45%;
+            }
+            &:nth-child(even) {
+                right: 75%;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Heading
 ------------------------------------*/

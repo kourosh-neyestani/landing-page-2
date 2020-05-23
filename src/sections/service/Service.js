@@ -50,7 +50,7 @@ const service = [
 function Service() {
     return (
         <section className="section section-service section-service-1">
-            <Container>
+            <Container className="container">
                 <Row nogutter className="row-0">
                     {service.map((item, index) => (
                         <Col lg={4} key={index} className="column">
